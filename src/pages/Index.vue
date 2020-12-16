@@ -15,7 +15,7 @@
         @keyup.enter="tambahTask"
         >
         <template v-slot:append>
-          <q-btn round dense flat icon="add" />
+          <q-btn round dense flat icon="add" @click="tambahTask"/>
         </template>
       </q-input>
   	<q-list v-for="(todo,index) in todos" :key="todo.title">
